@@ -3,6 +3,8 @@
   "advancedMode": "true",
   "language": "en-US",
   "repository": [
-    "repository-name"
+    "github-insights-template",
+    "github-insights",
+    "android-vpn-client-ics-openvpn"
   ]
 }
