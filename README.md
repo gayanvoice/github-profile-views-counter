@@ -7,15 +7,15 @@ This action is written by [gayanvoice](https://github.com/gayanvoice). Don't for
 
 ## Setup
 
-### Step 1 - ⚡️ Create an insight repository from the template   
+### Step 1 - ⚡️ Create an insight repository from the template.
 
 ### Step 2 - 🔒 Generate a *personal access token* with `repo` and `workflow` options.
   
-### Step 3 - 🔑 Create the *repository secret* name `INSIGHTS_TOKEN` and paste *personal access token*
+### Step 3 - 🔑 Create the *repository secret* name `INSIGHTS_TOKEN` and paste *personal access token*.
 
-### Step 4 - 📄 Add list repositories under`repository` key in `config.json`
+### Step 4 - 📄 Add list repositories under`repository` key in `config.json`.
 
-### Step 5 - 🟥 Run actions  
+### Step 5 - 🟥 Run actions.
 
 ## 📄 License
 - Repository: [gayanvoice/github-insights](https://github.com/gayanvoice/github-insights)
