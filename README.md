@@ -11,9 +11,9 @@ This action is written by [gayanvoice](https://github.com/gayanvoice). Don't for
 
 ### Step 2 - 🔒 Generate a *personal access token* with `repo` and `workflow` options.
   
-### Step 3 - 🔑 Create the *repository secret* name `INSIGHTS_TOKEN` and paste *personal access token*.
+### Step 3 - 🔑 Create the *repository secret* name `INSIGHTS_TOKEN` and paste *personal access token* in value.
 
-### Step 4 - 📄 Add list repositories under`repository` key in `config.json`.
+### Step 4 - 📄 Add list of repositories to `repository` in `config.json`.
 
 ### Step 5 - 🟥 Run actions.
 
