@@ -1,6 +1,6 @@
 # 📈 GitHub Hit Counter Template
  
-Follow the instructions given in [github-hit-counter](https://github.com/gayanvoice/github-insights) repository page.  You can follow how this is deployed in [gayanvoice/insights](https://github.com/gayanvoice/insights).
+Follow the instructions given in [github-hit-counter](https://github.com/gayanvoice/github-hit-counter) repository page.  You can follow how this is deployed in [gayanvoice/insights](https://github.com/gayanvoice/insights).
 
 This action is written by [gayanvoice](https://github.com/gayanvoice). Don't forget to follow me on [GitHub](https://github.com/gayanvoice), [Medium](https://medium.com/@gayanvoice) and [Twitter](https://twitter.com/gayanvoice).
 
