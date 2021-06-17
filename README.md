@@ -1,15 +1,19 @@
 # 🚀 GitHub Profile Views Counter
  
-Follow the instructions given in [github-hit-counter](https://github.com/gayanvoice/github-hit-counter) repository page.  You can follow how this is deployed in [gayanvoice/insights](https://github.com/gayanvoice/insights).
+Many GitHub page views counters are not stable as it seems. Any service disruptions or simply removal of these services can lose your profile views. Use this GitHub Action to record changes. It generates badges, charts, and tables for each repository and a badge for total views for your profile. 
 
 This action is written by [gayanvoice](https://github.com/gayanvoice). Don't forget to follow me on [GitHub](https://github.com/gayanvoice), [Medium](https://medium.com/@gayanvoice) and [Twitter](https://twitter.com/gayanvoice).
 
-## Watch
-[![How to setup hit counter for your GitHub repositories](https://img.youtube.com/vi/LdYrV6VSfqY/0.jpg)](https://www.youtube.com/watch?v=LdYrV6VSfqY)
+Before proceeding to set up this counter, look at this [repository](https://github.com/gayanvoice/insights). It uses this GitHub page views counter to record page views of each repository. You can select either `basic mode` or `advanced mode` to limit the information.
+
+| Mode | Description |
+| ---- | ----------- |
+| `advanced` | `week` ✔️ `month` ✔️ `year` ✔️ |
+| `basic` | `week` ✔️ `month` ❌ `year` ❌ |
 
 ## Setup
 
-### Step 1 - ⚡️ Create an repository from the template.
+### Step 1 - ⚡️ Create an empty repository give it any name.
 
 ### Step 2 - 🔒 Generate a *personal access token* with `repo` and `workflow` options.
   
@@ -20,6 +24,6 @@ This action is written by [gayanvoice](https://github.com/gayanvoice). Don't for
 ### Step 5 - 🟥 Run actions.
 
 ## 📄 License
-- Repository: [gayanvoice/github-hit-counter](https://github.com/gayanvoice/github-hit-counter)
-- Template - [gayanvoice/github-hit-counter-template](https://github.com/gayanvoice/github-hit-counter-template)
+- Repository: [gayanvoice/github-profile-views-counter](https://github.com/gayanvoice/github-profile-views-counter)
+- Source - [gayanvoice/github-insights](https://github.com/gayanvoice/github-insights)
 - Code: [MIT](./LICENSE) © [Gayan Kuruppu](https://github.com/gayanvoice)
