@@ -13,15 +13,51 @@ Before proceeding to set up this counter, look at this [repository](https://gith
 
 ## Setup
 
-### Step 1 - ⚡️ Create an empty repository give it any name.
+### Step 1 - ⚡️ Create an `empty repository` give it any name.
 
-### Step 2 - 🔒 Generate a *personal access token* with `repo` and `workflow` options.
+### Step 2 - 📄 Go to `Actions` create a `Simple workflow` by using `Set up this workflow` button.
+
+### Step 3 - ✂️ Copy and 📋 paste the following script into the `yml` file.
+```markdown
+name: GitHub Profile Views Counter CI
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+jobs:
+  release:
+    name: GitHub Insights
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2.3.4
+        with:
+          token: ${{ secrets.INSIGHTS_TOKEN }}
+      - uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 14.17.0
+      - uses: gayanvoice/github-insights@1.0.0
+        env:
+          INSIGHTS_TOKEN: ${{ secrets.INSIGHTS_TOKEN }}
+```
+### Step 4 - 🔒 Generate a *personal access token* with `repo` and `workflow` options.
   
-### Step 3 - 🔑 Create the *repository secret* name `INSIGHTS_TOKEN` and paste *personal access token* in value.
+### Step 5 - 🔑 Create the *repository secret* name `INSIGHTS_TOKEN` and paste *personal access token* in value.
 
-### Step 4 - 📄 Add list of repositories to `repository` in `config.json`.
+### Step 6 - 📄 Create a new file `config.json` and paste the following script.
+```markdown
+{
+  "devMode": "false",
+  "advancedMode": "true",
+  "language": "en-US",
+  "repository": [
+    "android-vpn-client-ics-openvpn",
+    "openvpn-install-for-multiple-users"
+  ]
+}
+```
+### Step 7 - 📄 Add list of repositories to `repository` in `config.json`.
 
-### Step 5 - 🟥 Run actions.
+### Step 8 - 🟥 Run actions.
 
 ## 📄 License
 - Repository: [gayanvoice/github-profile-views-counter](https://github.com/gayanvoice/github-profile-views-counter)
