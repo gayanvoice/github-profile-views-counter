@@ -1,4 +1,4 @@
-# 🚀 GitHub Hit Counter Template
+# 🚀 GitHub Profile Views Counter
  
 Follow the instructions given in [github-hit-counter](https://github.com/gayanvoice/github-hit-counter) repository page.  You can follow how this is deployed in [gayanvoice/insights](https://github.com/gayanvoice/insights).
 
