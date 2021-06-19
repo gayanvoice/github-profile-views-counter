@@ -1,63 +1,52 @@
 # 🚀 GitHub Profile Views Counter
  
-Many GitHub page views counters are not stable as it seems. Any service disruptions or simply removal of these services can lose your profile views. Use this GitHub Action to record changes. It generates badges, charts, and tables for each repository and a badge for total views for your profile. 
+Many GitHub page views counters are not stable as it seems. Any service disruptions or simply removal of these services can lose your profile views. Use this GitHub Action to record changes. It generates badges, charts, and tables for each repository and a badge for total views for your profile.
 
-This action is written by [gayanvoice](https://github.com/gayanvoice). Don't forget to follow me on [GitHub](https://github.com/gayanvoice), [Medium](https://medium.com/@gayanvoice) and [Twitter](https://twitter.com/gayanvoice).
+## Why do you need 🚀 GitHub Profile Views Counter?
+The main problem of using external services is what you do when they cut off their services? You will see a broken URL of the SVG you used to see profile views, and the next thing is you already lost thousands of profile views.
 
-Before proceeding to set up this counter, look at this [repository](https://github.com/gayanvoice/insights). It uses this GitHub page views counter to record page views of each repository. You can select either `basic mode` or `advanced mode` to limit the information.
+But this GitHub Profile Views Counter is different from others. It’s a public repository in your profile, and it stores all the data and SVG files. So you don’t lose anything, and it updates the page views every 6 hours. It fetches insights data of your repository from GitHub API. It records the number of unique visitors and also page views.
 
-| Mode | Description |
-| ---- | ----------- |
-| `advanced` | `week` ✔️ `month` ✔️ `year` ✔️ |
-| `basic` | `week` ✔️ `month` ❌ `year` ❌ |
-
+## Features
+**Charts —** The action generates charts for the week, month, and year. The below chart is for the week for a repository. Go to gayanvoice/my-profile-view-counter to see how it works.
+**Tables —** The action generates charts for the week, month, and year.
 ## Setup
+**1 —** 🚀 Go to gayanvoice/github-profile-views-counter and click on **Use this template** button to create a new repository
 
-### Step 1 - ⚡️ Create an `empty repository` give it any name.
+By using a template you don’t need to create the files from scratch, and all you need is to change the configuration.
 
-### Step 2 - 📄 Go to `Actions` create a `Simple workflow` by using `Set up this workflow` button.
+![GitHub Profile Views Counter - Click on Use this template button to create a new repository](https://miro.medium.com/max/600/1*wvbb87wOd1wCHKJh06vjPA.png)
 
-### Step 3 - ✂️ Copy and 📋 paste the following script into the `yml` file.
-```markdown
-name: GitHub Profile Views Counter CI
-on:
-  schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
-jobs:
-  release:
-    name: GitHub Insights
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2.3.4
-        with:
-          token: ${{ secrets.INSIGHTS_TOKEN }}
-      - uses: actions/setup-node@v2.1.5
-        with:
-          node-version: 14.17.0
-      - uses: gayanvoice/github-insights@1.0.0
-        env:
-          INSIGHTS_TOKEN: ${{ secrets.INSIGHTS_TOKEN }}
-```
-### Step 4 - 🔒 Generate a *personal access token* with `repo` and `workflow` options.
-  
-### Step 5 - 🔑 Create the *repository secret* name `INSIGHTS_TOKEN` and paste *personal access token* in value.
 
-### Step 6 - 📄 Create a new file `config.json` and paste the following script.
-```markdown
-{
-  "devMode": "false",
-  "advancedMode": "true",
-  "language": "en-US",
-  "repository": [
-    "android-vpn-client-ics-openvpn",
-    "openvpn-install-for-multiple-users"
-  ]
-}
-```
-### Step 7 - 📄 Add list of repositories to `repository` in `config.json`.
+**2 —** ⚡️ Enter a **repository name** and select repository type to **public repository** and click on **Create repository from template** button
 
-### Step 8 - 🟥 Run actions.
+You can give any name for the repository. You need to select repository type to public. Because GitHub provides an unlimited number of action minutes for public repositories.
+
+If you choose private, the free usage will limit to 2000 minutes per month. Go to GitHub Pricing page for more pricing plans.
+
+![GitHub Profile Views Counter - Click on create repository from template button to create the repository](https://miro.medium.com/max/600/1*hHdIM_fVnkdVdQGrbL1jRA.png)
+
+After you click on **Create repository from template** button, it will take some time to create the repository.
+
+**3 —** 🔒 Create a new personal access token with **repo** and **workflow** options
+
+Go to Personal Access Tokens and click on Generate new token button. Give it any name and select repo and workflow options and click on Generate token button. ✂️ Copy the token.
+
+![GitHub Profile Views Counter - create a new personal access token with repo and workflow options](https://miro.medium.com/max/700/1*YMft8U6IYTpBg7C5cASDUA.png)
+
+**4 —** 🔑 Go to your profile views counter repository and go to **Settings**, and select **Secrets** option from left side bar. Click on **New repository secret** button and enter **name** as **INSIGHTS_TOKEN** and 📋 paste the **personal access token** under **value**. Click on **Add secret** button.
+
+![GitHub Profile Views Counter - add repository secret by using repository secrets](https://miro.medium.com/max/700/1*jLtkxQNj2qrGcc4bLIvw3A.png)
+
+**5 —** 📄 Go to your profile views counter repository. Go to **config.json** and click on edit button. Add repository names.
+
+![GitHub Profile Views Counter - edit config.json file to add repository names](https://miro.medium.com/max/700/1*35wJBw75Fp5D_5t-fhaT_g.png)
+
+**6 —** Go to your profile views counter repository and click on Actions tab. Select the workflow and click on **Run workflow** button.
+
+![GitHub Profile Views Counter - click on run workflow button](https://miro.medium.com/max/700/1*hKkJ9EXlK14b3H3SeCNk4Q.png)
+
+It will take few minutes depends on number of repositories you have entered to the workflow. It will generate total views badge, repository badges, and markdown files.
 
 ## 📄 License
 - Repository: [gayanvoice/github-profile-views-counter](https://github.com/gayanvoice/github-profile-views-counter)
