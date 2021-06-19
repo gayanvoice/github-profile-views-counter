@@ -2,6 +2,9 @@
  
 Many GitHub page views counters are not stable as it seems. Any service disruptions or simply removal of these services can lose your profile views. Use this GitHub Action to record changes. It generates badges, charts, and tables for each repository and a badge for total views for your profile.
 
+## ▶️ Watch
+[![How to Setup GitHub Profile Views Counter for your GitHub profile](https://img.youtube.com/vi/K6FYiP_XRuU/0.jpg)](https://www.youtube.com/watch?v=K6FYiP_XRuU)
+
 ## Why do you need 🚀 GitHub Profile Views Counter?
 The main problem of using external services is what you do when they cut off their services? You will see a broken URL of the SVG you used to see profile views, and the next thing is you already lost thousands of profile views.
 
