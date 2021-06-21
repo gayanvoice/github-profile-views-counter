@@ -15,6 +15,7 @@ But this GitHub Profile Views Counter is different from others. It’s a public 
 
 ## Features
 **Charts —** The action generates charts for the week, month, and year. The below chart is for the week for a repository. Go to gayanvoice/my-profile-view-counter to see how it works.
+
 **Tables —** The action generates charts for the week, month, and year.
 ## Setup
 **1 —** 🚀 Go to gayanvoice/github-profile-views-counter and click on **Use this template** button to create a new repository
