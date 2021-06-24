@@ -1,6 +1,6 @@
 {
   "devMode": "false",
-  "advancedMode": "true",
+  "advancedMode": "false",
   "language": "en-US",
   "repository": [
     "repository-name"
